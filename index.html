@@ -1459,7 +1459,7 @@ async function sendPopupMessage() {
   chatHistory.push({ role: 'user', content: text });
   showPopupTyping();
 
-  const GEMINI_API_KEY = 'AIzaSyCrqe6pDY_ZjqQy9_IruYNtLV4aHbL0bss';
+  
 
   try {
     const msgs = chatHistory.map(m => ({
@@ -1468,7 +1468,7 @@ async function sendPopupMessage() {
     }));
 
     const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`,
+      `https://shudhanaj-farms.smanshu34.workers.dev`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
